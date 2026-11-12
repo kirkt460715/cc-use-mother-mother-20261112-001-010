@@ -1,0 +1,1 @@
+{"name":"public-investment-reconciliation","version":"1.0.0","private":true,"type":"module","engines":{"node":">=22.5"},"scripts":{"test":"node --test tests/*.test.js","build":"node syntax.js","demo":"node investment.js demo fixtures/accounts.json","controls":"node investment.js controls"}}

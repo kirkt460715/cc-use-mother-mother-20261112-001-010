@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "projects": [
+    {"id":"care-north","county":"county-n","program":"home-care","name":"North home care retrofit","start":2025,"end":2027,"status":"active"},
+    {"id":"care-river","county":"county-r","program":"community-care","name":"River community beds","start":2026,"end":2028,"status":"planned"}
+  ],
+  "appropriations": [
+    {"id":"auth-n-26","project":"care-north","fiscal_year":2026,"authorized":"5000.00","source":"central grant"},
+    {"id":"auth-r-26","project":"care-river","fiscal_year":2026,"authorized":"3000.00","source":"county match"}
+  ],
+  "disbursements": [
+    {"id":"pay-n-01","appropriation":"auth-n-26","date":20260403,"amount":"2000.00","kind":"payment","external_ref":"TREASURY-701"},
+    {"id":"pay-r-01","appropriation":"auth-r-26","date":20260512,"amount":"1000.00","kind":"payment","external_ref":"TREASURY-702"}
+  ],
+  "expenses": [
+    {"id":"exp-n-01","project":"care-north","date":20260420,"amount":"1250.00","category":"equipment","vendor_ref":"V-011"},
+    {"id":"exp-r-01","project":"care-river","date":20260520,"amount":"800.00","category":"construction","vendor_ref":"V-043"}
+  ],
+  "milestones": [
+    {"id":"milestone-n-1","project":"care-north","code":"delivery","due_date":20260630,"required":true},
+    {"id":"milestone-r-1","project":"care-river","code":"inspection","due_date":20260930,"required":true}
+  ],
+  "deliverables": [
+    {"id":"output-n-1","project":"care-north","milestone":"milestone-n-1","accepted_date":20260628,"units":18,"evidence_ref":"ACCEPT-88"}
+  ],
+  "reversals": []
+}
